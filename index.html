@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="مكتبة إلكترونية - كلية التربية أبو عيسى">
+  <meta name="keywords" content="مكتبة, كلية التربية, أبو عيسى, كتب, تعليم">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مكتبة كلية التربية - أبو عيسى</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>مكتبة كلية التربية - أبو عيسى</h1>
+  </header>
+
+  <main>
+    <section id="departments">
+      <div class="department" onclick="openDepartment('cs')">قسم الحاسوب</div>
+      <div class="department" onclick="openDepartment('physics')">قسم الفيزياء</div>
+      <div class="department" onclick="openDepartment('bio')">قسم الأحياء</div>
+      <div class="department" onclick="openDepartment('math')">قسم الرياضيات</div>
+      <div class="department" onclick="openDepartment('english')">قسم اللغة الإنجليزية</div>
+      <div class="department" onclick="openDepartment('arabic')">قسم اللغة العربية</div>
+      <div class="department" onclick="openDepartment('geo')">قسم الجغرافيا</div>
+      <div class="department" onclick="openDepartment('history')">قسم التاريخ</div>
+      <div class="department" onclick="openDepartment('edu')">قسم التربية وعلم النفس</div>
+    </section>
+
+    <section id="books" style="display:none">
+      <h2 id="dept-title"></h2>
+      <div id="book-list" class="book-grid"></div>
+      <button onclick="goBack()">العودة</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

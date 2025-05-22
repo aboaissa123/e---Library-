@@ -1,0 +1,36 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  direction: rtl;
+}
+header {
+  background: #004080;
+  color: white;
+  padding: 20px;
+}
+.department {
+  background: #ffffff;
+  margin: 10px auto;
+  padding: 15px;
+  width: 60%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.department:hover {
+  background: #e0e0ff;
+}
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 20px;
+}
+.book-grid a {
+  background: white;
+  padding: 10px;
+  border: 1px solid #aaa;
+  text-decoration: none;
+  color: black;
+}
